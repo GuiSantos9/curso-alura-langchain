@@ -28,4 +28,5 @@ resposta = cliente.chat.completions.create(
     ]
 )
 
-print(resposta)
+resposta_em_texto = resposta.choises[0].message.content
+print(resposta_em_texto)
