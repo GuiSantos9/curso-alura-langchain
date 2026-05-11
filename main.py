@@ -62,9 +62,9 @@ cadeia_1 = prompt_cidade | modelo | parseador_destino
 cadeia_2 = prompt_restaurantes | modelo | parseador_restaurantes
 cadeia_3 = prompt_cultural | modelo | StrOutputParser()
 
-cadeia = (cadeia_1 |     cadeia_2 | cadeia_3)
+cadeia = (cadeia_1 | cadeia_2 | cadeia_3)
 
-resposta= cadeia.invoke(
+resposta = cadeia.invoke(
     {
     "interesse": "praias"
     }
